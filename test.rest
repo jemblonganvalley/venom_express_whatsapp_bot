@@ -1,0 +1,18 @@
+###
+POST http://localhost:3000/api/send_message
+Content-Type: application/json
+Authorization: Bearer reques_token_first
+
+{
+    "to" : "62xxxxxxxxx",
+    "text" : "😂 😂 😂 😂 😂 "
+}
+
+###
+POST http://localhost:3000/api/request_token
+Content-Type: application/json
+
+{
+    "username" : "<your username>",
+    "password" : "<your password>"
+}
