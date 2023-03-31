@@ -16,7 +16,6 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, "public")))
 
 
-app.use("/api", auth_route)
 
 venom.create()
     .then(client => {
@@ -72,6 +71,9 @@ const start = (client) => {
     })
 
 }
+
+// app.use("/api", auth_route)
+
 
 app.listen(PORT, () => {
     console.info("server berjalan")
