@@ -20,6 +20,7 @@ app.use("/api", auth_route)
 
 venom.create()
     .then(client => {
+        console.info(client)
         start(client)
     })
     .catch(err => {
