@@ -3,17 +3,17 @@ POST http://192.168.18.105:9999/api/request_token
 Content-Type: application/json
 
 {
-    "username" : "<your username>",
-    "password" : "<your password>"
+    "username" : "fadliselaz",
+    "password" : "fadliselaz13"
 }
 
 ###
 POST http://192.168.18.105:9999/api/send_message
 Content-Type: application/json
-Authorization: Bearer <Please Paste Response Token Here !>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfbmFtZSI6IkJvdCBXaGF0c2FwcCIsImFwcF92ZXJzaW9uIjoiMS4wLjAiLCJyZXF1ZXN0X2RhdGUiOiIwMS8wNC8yMDIzIDAyOjA0OjI5IiwiaWF0IjoxNjgwMjg5NDY5LCJleHAiOjE2ODAzNzU4Njl9.CiXvXgBkx6vUs89HoAbia2yYOj1bdA4ZHXf0co07Brk
 
 {
-    "to" : "62xxxxxxxxx",
+    "to" : "6281324687248",
     "text" : "😂 😂 😂 😂 😂 "
 }
 

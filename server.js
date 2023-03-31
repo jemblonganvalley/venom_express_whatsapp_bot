@@ -45,6 +45,12 @@ const start = (client) => {
     //     }
     // })
 
+    app.get("/api/read", (req, res) => {
+        return res.status(200).json({
+            success: true
+        })
+    })
+
     // api kirim pesan
     app.post("/api/send_message", auth_check, async (req, res) => {
         try {
