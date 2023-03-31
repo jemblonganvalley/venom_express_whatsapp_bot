@@ -1,5 +1,5 @@
 ###
-POST http://localhost:3000/api/request_token
+POST http://192.168.18.105:9999/api/request_token
 Content-Type: application/json
 
 {
@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3000/api/send_message
+POST http://192.168.18.105:9999/api/send_message
 Content-Type: application/json
 Authorization: Bearer <Please Paste Response Token Here !>
 
