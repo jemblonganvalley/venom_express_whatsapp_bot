@@ -29,20 +29,20 @@ venom.create()
 const start = (client) => {
 
     // ketika ada pesan masuk
-    client.onMessage((msg) => {
-        // random jawaban
-        let rj = Math.floor(Math.random() * jawaban.length) // 0 - 4
+    // client.onMessage((msg) => {
+    //     // random jawaban
+    //     let rj = Math.floor(Math.random() * jawaban.length) // 0 - 4
 
-        if (pesanMasuk.includes(msg.body) && msg.isGroupMsg === false) {
-            client.sendText(msg.from, jawaban[rj])
-                .then(result => {
-                    console.info(result)
-                })
-                .catch(err => {
-                    console.error(err)
-                })
-        }
-    })
+    //     if (pesanMasuk.includes(msg.body) && msg.isGroupMsg === false) {
+    //         client.sendText(msg.from, jawaban[rj])
+    //             .then(result => {
+    //                 console.info(result)
+    //             })
+    //             .catch(err => {
+    //                 console.error(err)
+    //             })
+    //     }
+    // })
 
     // api kirim pesan
     app.post("/api/send_message", auth_check, async (req, res) => {
